@@ -1,0 +1,74 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "aws.networkelb.activeflowcount",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.consumedlcus",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.healthyhostcount",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.newflowcount",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.processedbytes",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.tcp_client_reset_count",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.tcp_elb_reset_count",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.tcp_target_reset_count",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.networkelb.unhealthyhostcount",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      }
+    ],
+    "name": "AWS NLB",
+    "scope": {
+      "elementType": "NLB"
+    },
+    "type": "ACE"
+  }
+}

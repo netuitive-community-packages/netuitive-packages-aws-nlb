@@ -1,0 +1,128 @@
+{
+  "dashboard": {
+    "created": "2018-10-09T22:19:10Z",
+    "name": "AWS NLB Summary",
+    "private": false,
+    "properties": {
+      "costOnly": "false",
+      "globalFilter": "false",
+      "gridstackContents": "[{\"id\":\"eef12c4f-fd5a-4322-8fa1-e84b253a5594\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"cca171ae-59c5-4817-b093-40dc53257d75\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"1096b245-4c63-4ed5-921c-ce79dc1403a6\",\"x\":0,\"y\":9,\"width\":12,\"height\":9},{\"id\":\"01a6640c-b2e8-45a5-9a0c-7657bfbae268\",\"x\":8,\"y\":0,\"width\":4,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true"
+    },
+    "type": "DEFAULT",
+    "updated": "2018-10-09T22:25:08Z",
+    "widgets": [
+      {
+        "created": "2018-10-09T22:19:10Z",
+        "generated": false,
+        "id": "eef12c4f-fd5a-4322-8fa1-e84b253a5594",
+        "name": "Top 5 Unhealthy NLB",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "aws.networkelb.unhealthyhostcount",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "table"
+        },
+        "updated": "2018-10-09T22:19:36Z",
+        "widgetType": "metric-range"
+      },
+      {
+        "created": "2018-10-09T22:19:10Z",
+        "generated": false,
+        "id": "cca171ae-59c5-4817-b093-40dc53257d75",
+        "name": "Top 5 Busiest NLB",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "sum",
+          "metricLimit": "5",
+          "metricUnit": "bytes",
+          "metric_fqn": "aws.networkelb.processedbytes",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "updated": "2018-10-09T22:20:25Z",
+        "widgetType": "metric-range"
+      },
+      {
+        "created": "2018-10-09T22:19:10Z",
+        "generated": false,
+        "id": "1096b245-4c63-4ed5-921c-ce79dc1403a6",
+        "name": "NLB Data",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"aws.applicationelb.healthyhostcount\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":\"avg\",\"groupAggFn\":null,\"aggregationGroups\":[]},{\"fqn\":\"aws.applicationelb.unhealthyhostcount\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":\"avg\",\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"attribute\",\"attributeName\":\"state\"},{\"columnType\":\"metric\",\"metricDisplayName\":\"Healthy Hosts\",\"metricFqn\":\"aws.networkelb.healthyhostcount\",\"metricAggFn\":\"max\"},{\"columnType\":\"metric\",\"metricDisplayName\":\"Unhealthy Hosts\",\"metricFqn\":\"aws.networkelb.unhealthyhostcount\",\"metricAggFn\":\"max\"}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "table"
+        },
+        "updated": "2018-10-09T22:21:26Z",
+        "widgetType": "multi-metric-table"
+      },
+      {
+        "created": "2018-10-09T22:19:10Z",
+        "generated": false,
+        "id": "01a6640c-b2e8-45a5-9a0c-7657bfbae268",
+        "name": "Top 5 Highest Active Flows (connections)",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "aws.networkelb.activeflowcount",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "updated": "2018-10-09T22:21:00Z",
+        "widgetType": "metric-range"
+      }
+    ]
+  }
+}

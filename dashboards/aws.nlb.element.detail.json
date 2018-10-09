@@ -1,0 +1,134 @@
+{
+  "dashboard": {
+    "created": "2018-10-09T21:44:18Z",
+    "name": "AWS NLB Element Detail",
+    "private": true,
+    "properties": {
+      "costOnly": "false",
+      "globalFilter": "false",
+      "gridstackContents": "[{\"id\":\"e34d4072-f4ad-4b3e-ad9d-afd4a3a014a9\",\"x\":0,\"y\":0,\"width\":4,\"height\":7},{\"id\":\"ecbc6116-4416-4615-a9c5-9039fa1d27b1\",\"x\":4,\"y\":0,\"width\":4,\"height\":7},{\"id\":\"2004bdc1-4eb9-456a-9480-13e66542a3c1\",\"x\":8,\"y\":0,\"width\":4,\"height\":7},{\"id\":\"a415be9d-9589-4ab0-8397-828f696751d6\",\"x\":0,\"y\":9,\"width\":12,\"height\":9},{\"id\":\"5f3534fb-4538-4847-8ff0-229fb4ea809b\",\"x\":0,\"y\":9,\"width\":12,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true"
+    },
+    "type": "NLB",
+    "updated": "2018-10-09T21:49:37Z",
+    "widgets": [
+      {
+        "created": "2018-10-09T21:46:01Z",
+        "dashboardId": "b6b3c4e6-4527-45a9-aa54-299073fee3ae",
+        "generated": false,
+        "id": "e34d4072-f4ad-4b3e-ad9d-afd4a3a014a9",
+        "name": "Active Flows (connections)",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"aws.networkelb.activeflowcount\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "updated": "2018-10-09T21:46:01Z",
+        "widgetType": "multi-metric"
+      },
+      {
+        "created": "2018-10-09T21:46:47Z",
+        "generated": false,
+        "id": "ecbc6116-4416-4615-a9c5-9039fa1d27b1",
+        "name": "Processed Bytes",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "bytes",
+          "metrics": "[{\"fqn\":\"aws.networkelb.processedbytes\",\"useRegex\":false,\"aggFns\":[\"sum\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "updated": "2018-10-09T21:46:47Z",
+        "widgetType": "multi-metric"
+      },
+      {
+        "created": "2018-10-09T21:48:10Z",
+        "generated": false,
+        "id": "2004bdc1-4eb9-456a-9480-13e66542a3c1",
+        "name": "TCP Reset Counts",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"NLB\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"aws.networkelb.tcp.*reset_count\",\"useRegex\":true,\"aggFns\":[\"sum\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "stacked"
+        },
+        "updated": "2018-10-09T21:49:07Z",
+        "widgetType": "multi-metric"
+      },
+      {
+        "created": "2016-03-11T02:17:30Z",
+        "id": "a415be9d-9589-4ab0-8397-828f696751d6",
+        "name": "Attributes",
+        "properties": {
+          "element_id": "a3915a25-0d84-31e4-81c4-6163bd186952",
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "updated": "2016-03-11T02:17:30Z",
+        "widgetType": "element-attributes"
+      },
+      {
+        "created": "2016-03-11T02:17:52Z",
+        "id": "5f3534fb-4538-4847-8ff0-229fb4ea809b",
+        "name": "Tags",
+        "properties": {
+          "element_id": "a3915a25-0d84-31e4-81c4-6163bd186952",
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "updated": "2016-03-11T02:17:52Z",
+        "widgetType": "element-tags"
+      }
+    ]
+  }
+}

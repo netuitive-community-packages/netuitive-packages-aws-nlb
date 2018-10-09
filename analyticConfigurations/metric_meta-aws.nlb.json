@@ -1,0 +1,68 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "aws.networkelb.activeflowcount",
+        "properties": {
+          "STATISTIC": "avg"
+        }
+      },
+      {
+        "match": "aws.networkelb.consumedlcus",
+        "properties": {
+          "STATISTIC": "max"
+        }
+      },
+      {
+        "match": "aws.networkelb.healthyhostcount",
+        "properties": {
+          "STATISTIC": "max"
+        }
+      },
+      {
+        "match": "aws.networkelb.newflowcount",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "aws.networkelb.processedbytes",
+        "properties": {
+          "STATISTIC": "sum",
+          "tags": {
+            "unit": "bytes"
+          }
+        }
+      },
+      {
+        "match": "aws.networkelb.tcp_client_reset_count",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "aws.networkelb.tcp_elb_reset_count",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "aws.networkelb.tcp_target_reset_count",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "aws.networkelb.unhealthyhostcount",
+        "properties": {
+          "STATISTIC": "max"
+        }
+      }
+    ],
+    "name": "AWS NLB",
+    "scope": {
+      "elementType": "NLB"
+    },
+    "type": "METRIC_META"
+  }
+}

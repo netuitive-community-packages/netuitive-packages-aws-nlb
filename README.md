@@ -6,7 +6,7 @@ For detailed information on this package, please refer to the [online documentat
 
 ## Release History
 
-### Version 1.1.0
+### Version next
 
 * Add a computed metric to calculate the percentage of unhealthy hosts
 * Add policy for Active Flows Count (connections)

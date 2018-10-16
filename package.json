@@ -16,10 +16,40 @@
     "tags": [],
     "checksum": null
   },
-  "policies": [],
+  "policies": [{
+    "data": {
+      "file": "policies/aws.nlb.high.activeflowcount.json",
+      "encoding": "application/json",
+      "content": null
+    }
+  }, {
+    "data": {
+      "file": "policies/aws.nlb.high.processedbytes.json",
+      "encoding": "application/json",
+      "content": null
+    }
+  }, {
+    "data": {
+      "file": "policies/aws.nlb.unhealthyhostpercent.above.50.json",
+      "encoding": "application/json",
+      "content": null
+    }
+  }, {
+    "data": {
+      "file": "policies/aws.nlb.unhealthyhostpercent.above.75.json",
+      "encoding": "application/json",
+      "content": null
+    }
+  }],
   "analyticConfigurations": [{
     "data": {
       "file": "analyticConfigurations/ace-aws.nlb.json",
+      "encoding": "application/json",
+      "content": null
+    }
+  }, {
+    "data": {
+      "file": "analyticConfigurations/computed-aws.nlb.json",
       "encoding": "application/json",
       "content": null
     }

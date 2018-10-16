@@ -1,0 +1,32 @@
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 2,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "actual",
+        "level": 50,
+        "metric": "netuitive.aws.networkelb.unhealthyhostpercent",
+        "operator": ">="
+      },
+      {
+        "analytic": "actual",
+        "level": 75,
+        "metric": "netuitive.aws.networkelb.unhealthyhostpercent",
+        "operator": "<="
+      }
+    ],
+    "deleted": false,
+    "description": "More than half (50%) of the hosts associated with this NLB are in an unhealthy state.",
+    "duration": 300,
+    "enabled": true,
+    "name": "AWS NLB - Unhealthy Host Percent (above 50%)",
+    "scope": {
+      "elementType": "NLB"
+    }
+  }
+}

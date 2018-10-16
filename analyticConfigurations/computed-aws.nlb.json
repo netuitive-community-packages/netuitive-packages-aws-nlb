@@ -1,0 +1,19 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "netuitive.aws.networkelb.unhealthyhostpercent",
+        "properties": {
+          "expression": "(data['aws.networkelb.unhealthyhostcount'].actual + data['aws.networkelb.healthyhostcount'].actual) == 0 ? 0 : (data['aws.networkelb.unhealthyhostcount'].actual / (data['aws.networkelb.unhealthyhostcount'].actual + data['aws.networkelb.healthyhostcount'].actual))*100",
+          "fqn": "netuitive.aws.networkelb.unhealthyhostpercent",
+          "name": "Unhealthy Host Percent"
+        }
+      }
+    ],
+    "name": "AWS NLB",
+    "scope": {
+      "elementType": "NLB"
+    },
+    "type": "COMPUTED_METRIC"
+  }
+}

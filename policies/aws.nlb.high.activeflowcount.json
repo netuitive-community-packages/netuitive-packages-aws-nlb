@@ -14,7 +14,7 @@
       }
     ],
     "deleted": false,
-    "description": "This policy will generate a Warning alert when we detect unusually high Active Flow Counts (connections) with a minimum of 1000 Active Flows for at least 15 minutes.",
+    "description": "This policy will generate a Warning alert when we detect unusually high Active Flow Counts (connections) for at least 15 minutes.",
     "duration": 900,
     "enabled": true,
     "name": "AWS NLB - High Active Flow Count (connections)",

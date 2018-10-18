@@ -14,7 +14,7 @@
       }
     ],
     "deleted": false,
-    "description": "This policy will generate a Warning alert when we detect unusually high Processed Bytes (connections) with a minimum of 1Gb Processed for at least 15 minutes.",
+    "description": "This policy will generate a Warning alert when we detect unusually high Processed Bytes (connections) for at least 15 minutes.",
     "duration": 900,
     "enabled": true,
     "name": "AWS NLB - High Processed Bytes",

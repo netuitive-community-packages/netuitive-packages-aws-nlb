@@ -2,7 +2,7 @@
   "policy": {
     "actions": [
       {
-        "category": 3,
+        "category": 2,
         "type": "event"
       }
     ],
@@ -11,16 +11,10 @@
         "analytic": "baselineDeviation",
         "metric": "aws.networkelb.processedbytes",
         "operator": ">"
-      },
-      {
-        "analytic": "actual",
-        "level": 1000000000,
-        "metric": "aws.networkelb.processedbytes",
-        "operator": ">="
       }
     ],
     "deleted": false,
-    "description": "This policy will generate a Critical alert when we detect unusually high Processed Bytes (connections) with a minimum of 1Gb Processed for at least 15 minutes.",
+    "description": "This policy will generate a Warning alert when we detect unusually high Processed Bytes (connections) with a minimum of 1Gb Processed for at least 15 minutes.",
     "duration": 900,
     "enabled": true,
     "name": "AWS NLB - High Processed Bytes",

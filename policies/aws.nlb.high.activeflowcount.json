@@ -2,7 +2,7 @@
   "policy": {
     "actions": [
       {
-        "category": 3,
+        "category": 2,
         "type": "event"
       }
     ],
@@ -11,16 +11,10 @@
         "analytic": "baselineDeviation",
         "metric": "aws.networkelb.activeflowcount",
         "operator": ">"
-      },
-      {
-        "analytic": "actual",
-        "level": 1000,
-        "metric": "aws.networkelb.activeflowcount",
-        "operator": ">="
       }
     ],
     "deleted": false,
-    "description": "This policy will generate a Critical alert when we detect unusually high Active Flow Counts (connections) with a minimum of 1000 Active Flows for at least 15 minutes.",
+    "description": "This policy will generate a Warning alert when we detect unusually high Active Flow Counts (connections) with a minimum of 1000 Active Flows for at least 15 minutes.",
     "duration": 900,
     "enabled": true,
     "name": "AWS NLB - High Active Flow Count (connections)",

@@ -8,6 +8,8 @@ For detailed information on this package, please refer to the [online documentat
 
 ### Version next
 
+### Version 1.1.0
+
 * Add a computed metric to calculate the percentage of unhealthy hosts
 * Add policy for Active Flows Count (connections)
 * Add policy for Process Bytes

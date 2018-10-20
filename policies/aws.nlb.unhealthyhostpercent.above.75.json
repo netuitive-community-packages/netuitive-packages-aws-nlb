@@ -1,0 +1,26 @@
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 3,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "actual",
+        "level": 75,
+        "metric": "aws.networkelb.unhealthyhostpercent",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "More than three quarters (75%) of the hosts associated with this NLB are in an unhealthy state.",
+    "duration": 300,
+    "enabled": true,
+    "name": "AWS NLB - Unhealthy Host Percent (above 75%)",
+    "scope": {
+      "elementType": "NLB"
+    }
+  }
+}

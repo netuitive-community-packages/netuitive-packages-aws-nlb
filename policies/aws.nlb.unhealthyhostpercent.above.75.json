@@ -10,7 +10,7 @@
       {
         "analytic": "actual",
         "level": 75,
-        "metric": "netuitive.aws.networkelb.unhealthyhostpercent",
+        "metric": "aws.networkelb.unhealthyhostpercent",
         "operator": ">"
       }
     ],

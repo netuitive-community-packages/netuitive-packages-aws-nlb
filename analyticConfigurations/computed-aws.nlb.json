@@ -4,7 +4,10 @@
       {
         "match": "aws.networkelb.unhealthyhostpercent",
         "properties": {
-          "expression": "(data['aws.networkelb.unhealthyhostcount'].actual + data['aws.networkelb.healthyhostcount'].actual) == 0 ? 0 : (data['aws.networkelb.unhealthyhostcount'].actual / (data['aws.networkelb.unhealthyhostcount'].actual + data['aws.networkelb.healthyhostcount'].actual))*100",
+          "expressions": [
+            "100 * ${aws.networkelb.unhealthyhostcount}.actual / (${aws.networkelb.unhealthyhostcount}.actual + ${aws.networkelb.healthyhostcount}.actual)",
+            "0"
+          ],
           "fqn": "aws.networkelb.unhealthyhostpercent",
           "name": "Unhealthy Host Percent"
         }

@@ -8,6 +8,8 @@ For detailed information on this package, please refer to the [online documentat
 
 ### Version next
 
+* Convert computed metrics to new format
+
 ### Version 1.1.0
 
 * Add a computed metric to calculate the percentage of unhealthy hosts
